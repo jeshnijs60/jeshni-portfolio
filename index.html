@@ -3,24 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeshni | Portfolio</title>
+  <title>Jeshni J S | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #f4f5ff;
+      line-height: 1.7;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #111831;
+      position: sticky;
+      top: 0;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo { color: #a78bfa; font-size: 23px; font-weight: bold; }
+    nav a { color: white; text-decoration: none; margin-left: 15px; }
+    nav a:hover { color: #a78bfa; }
+    section { padding: 65px 8%; }
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(circle at top right, #35236b, #0b1020 60%);
+    }
+    .tag { color: #c4b5fd; font-weight: bold; }
+    h1 { font-size: clamp(38px, 7vw, 65px); line-height: 1.2; margin: 15px 0; }
+    h1 span { color: #a78bfa; }
+    h2 { font-size: 30px; margin-bottom: 20px; color: #c4b5fd; }
+    p { color: #c5cbe0; max-width: 720px; margin-bottom: 16px; }
+    .btn {
+      display: inline-block; margin: 10px 8px 0 0; padding: 11px 20px;
+      border-radius: 9px; text-decoration: none; font-weight: bold;
+      background: #8b5cf6; color: white;
+    }
+    .btn.outline { background: transparent; border: 1px solid #a78bfa; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); gap: 18px; }
+    .card {
+      background: #151d35; border: 1px solid #293454;
+      padding: 23px; border-radius: 15px;
+    }
+    .card h3 { color: #ddd6fe; margin-bottom: 10px; }
+    .pill {
+      display: inline-block; background: #242044; color: #ddd6fe;
+      padding: 7px 13px; margin: 5px; border-radius: 20px;
+    }
+    footer { text-align: center; padding: 25px; color: #9ca3bb; background: #111831; }
+    @media(max-width:600px) {
+      nav { padding: 16px 5%; }
+      nav a { margin-left: 5px; font-size: 13px; }
+      section { padding: 48px 6%; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I'm Jeshni J S 👋</h1>
-  <h2>BTech Information Technology Student</h2>
-  <p>I'm interested in web development, programming, and technology.</p>
 
-  <h2>About Me</h2>
-  <p>I'm an IT student learning new technologies and building projects.</p>
+  <nav>
+    <div class="logo">Jeshni.</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <h2>Skills</h2>
-  <p>HTML | CSS | JavaScript | Java | MySQL</p>
+  <section class="hero">
+    <p class="tag">WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm <span>Jeshni J S</span> 👋</h1>
+    <h2>B.Tech Information Technology Student</h2>
+    <p>I'm a passionate IT student exploring web development,
+       programming, and new technologies. I enjoy learning
+       and building projects that improve my skills.</p>
+    <div>
+      <a class="btn" href="#projects">Explore My Projects ↘</a>
+      <a class="btn outline" href="#contact">Contact Me</a>
+    </div>
+  </section>
 
-  <h2>Projects</h2>
-  <p>Check out my projects on GitHub.</p>
-  <a href="https://github.com/jeshnijs60">My GitHub Profile</a>
+  <section id="about">
+    <h2>About Me 👩‍💻</h2>
+    <div class="card">
+      <p>I'm Jeshni, a B.Tech Information Technology student.
+      I'm developing my technical skills through practice,
+      projects, and continuous learning.</p>
+      <p>My goal is to gain practical experience and grow
+      as a software and technology professional.</p>
+    </div>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Email: jeshnijs60@gmail.com</p>
+  <section id="skills">
+    <h2>My Skills 🛠️</h2>
+    <p>Technologies I'm learning and practising:</p>
+    <div>
+      <span class="pill">HTML</span>
+      <span class="pill">CSS</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">Java</span>
+      <span class="pill">SQL / MySQL</span>
+      <span class="pill">Power BI</span>
+      <span class="pill">GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects 🚀</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive personal website to introduce myself
+        and showcase my learning journey.</p>
+        <a class="btn" href="https://github.com/jeshnijs60/jeshni-portfolio">View Code</a>
+      </div>
+      <div class="card">
+        <h3>Power BI Sales Dashboard</h3>
+        <p>A student project exploring sales data, charts,
+        and interactive business insights.</p>
+        <span class="pill">Power BI</span>
+        <span class="pill">Data Analytics</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect 💌</h2>
+    <p>I'm interested in learning opportunities, internships,
+    and connecting with fellow technology learners.</p>
+    <a class="btn" href="https://github.com/jeshnijs60">GitHub</a>
+    <a class="btn outline" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="btn outline" href="https://leetcode.com/u/jeshnijs60/">LeetCode</a>
+  </section>
+
+  <footer>© 2026 Jeshni J S | Built with 💜 and HTML & CSS</footer>
+
 </body>
 </html>
